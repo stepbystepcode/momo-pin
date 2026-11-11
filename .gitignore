@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+.token
+*.apk
+unpacked/
+
+data/*.db
+today-words.json
+gloss-cache.json
+glosses.json
+review-pin.png
+pin.js
+pin-today.log

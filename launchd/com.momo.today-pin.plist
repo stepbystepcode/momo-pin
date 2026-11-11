@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.momo.today-pin</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>@PYTHON@</string>
+    <string>@ROOT@/pin_today.py</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>10</integer>
+    <key>Minute</key>
+    <integer>5</integer>
+  </dict>
+  <key>LimitLoadToSessionType</key>
+  <string>Aqua</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>SSL_CERT_FILE</key>
+    <string>/etc/ssl/cert.pem</string>
+    <key>PYTHONUNBUFFERED</key>
+    <string>1</string>
+  </dict>
+  <key>WorkingDirectory</key>
+  <string>@ROOT@</string>
+  <key>StandardOutPath</key>
+  <string>@ROOT@/pin-today.log</string>
+  <key>StandardErrorPath</key>
+  <string>@ROOT@/pin-today.log</string>
+</dict>
+</plist>
